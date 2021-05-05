@@ -2,6 +2,7 @@ from tkinter import *
 import random
 import MySQLdb
 
+
 BACKGROUND_COLOR = "#B1DDC6"
 new_card = tuple()
 
@@ -83,3 +84,5 @@ known_button.grid(row=1, column=2)
 german_card()
 
 window.mainloop()
+
+connection.close()
