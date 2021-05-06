@@ -1,7 +1,6 @@
 import pandas
 import MySQLdb
 
-
 data = pandas.read_csv("data/german_words.csv")
 dict_data = data.to_dict(orient="records")
 
@@ -19,4 +18,3 @@ for card in dict_data:
         print(f"There's error on row {count}")
 
 connection.close()
-
